@@ -50847,30 +50847,30 @@ az:function(){return new F.FE(C.k)}}
 F.FE.prototype={
 SK:function(){this.ac(new F.Zw(this))},
 SL:function(){this.ac(new F.Zx(this))},
-P:function(a,b){var s,r,q,p,o,n,m,l,k,j,i=this,h=4280953386,g=null,f=4291611852,e=i.d==="RO"?L.f2("\ud83d\udea7 Aceasta pagina este in lucru! \ud83d\udea7",A.d1(g,g,new P.y(h),g,g,g,g,g,g,g,g,20,g,g,g,g,!0,g,g,g,g,g,g,g),g,g):L.f2("\ud83d\udea7 This page is under construction! \ud83d\udea7",A.d1(g,g,new P.y(h),g,g,g,g,g,g,g,g,20,g,g,g,g,!0,g,g,g,g,g,g,g),g,g),d=t.nA
+P:function(a,b){var s,r,q,p,o,n,m,l,k,j,i=this,h=4280953386,g=null,f=4291611852,e=i.d==="RO"?L.f2("\ud83d\udea7 Aceast\u0103 pagin\u0103 este \xeen lucru! \ud83d\udea7",A.d1(g,g,new P.y(h),g,g,g,g,g,g,g,g,14,g,g,g,g,!0,g,g,g,g,g,g,g),g,g):L.f2("\ud83d\udea7 This page is under construction! \ud83d\udea7",A.d1(g,g,new P.y(h),g,g,g,g,g,g,g,g,14,g,g,g,g,!0,g,g,g,g,g,g,g),g,g),d=t.nA
 e=M.dd(g,T.a3S(H.a([e],d),C.di),g,g,g,g,new V.aK(0,10,0,10),g,g)
-s=M.dd(g,new U.mn(new L.lL("assets/logo_1024.png",g,g),g),g,g,g,300,g,g,300)
-r=L.f2("Limba / Language:",A.d1(g,g,new P.y(f),g,g,g,g,g,g,g,g,20,g,g,g,g,!0,g,g,g,g,g,g,g),g,g)
+s=M.dd(g,new U.mn(new L.lL("assets/logo_1024.png",g,g),g),g,g,g,260,g,g,260)
+r=L.f2("Limba / Language:",A.d1(g,g,new P.y(f),g,g,g,g,g,g,g,g,14,g,g,g,g,!0,g,g,g,g,g,g,g),g,g)
 if(i.d==="RO"){q=K.a6w(new P.bw(10,10))
 q=new S.fm(g,g,F.a6x(new P.y(f),3),q,g,g,C.ad)}else q=g
-q=M.dd(g,L.f2("RO: ",A.d1(g,g,new P.y(f),g,g,g,g,g,g,g,g,20,g,g,g,g,!0,g,g,g,g,g,g,g),g,g),g,g,q,g,g,new V.aK(5,5,5,5),g)
-p=M.dd(g,B.a7i(U.a7k("assets/flag_RO.png"),new F.Zy(i)),g,g,g,45,new V.aK(0,0,20,0),g,70)
+q=M.dd(g,L.f2("RO: ",A.d1(g,g,new P.y(f),g,g,g,g,g,g,g,g,14,g,g,g,g,!0,g,g,g,g,g,g,g),g,g),g,g,q,g,g,new V.aK(5,5,5,5),g)
+p=M.dd(g,B.a7i(U.a7k("assets/flag_RO.png"),new F.Zy(i)),g,g,g,40,new V.aK(0,0,20,0),g,60)
 if(i.d==="RO")o=g
 else{o=K.a6w(new P.bw(10,10))
-o=new S.fm(g,g,F.a6x(new P.y(f),3),o,g,g,C.ad)}o=T.a3S(H.a([q,p,M.dd(g,L.f2("EN: ",A.d1(g,g,new P.y(f),g,g,g,g,g,g,g,g,20,g,g,g,g,!0,g,g,g,g,g,g,g),g,g),g,g,o,g,g,new V.aK(5,5,5,5),g),M.dd(g,B.a7i(U.a7k("assets/flag_EN.png"),new F.Zz(i)),g,g,g,40,g,g,70)],d),C.di)
+o=new S.fm(g,g,F.a6x(new P.y(f),3),o,g,g,C.ad)}o=T.a3S(H.a([q,p,M.dd(g,L.f2("EN: ",A.d1(g,g,new P.y(f),g,g,g,g,g,g,g,g,14,g,g,g,g,!0,g,g,g,g,g,g,g),g,g),g,g,o,g,g,new V.aK(5,5,5,5),g),M.dd(g,B.a7i(U.a7k("assets/flag_EN.png"),new F.Zz(i)),g,g,g,35,g,g,60)],d),C.di)
 q=i.d==="RO"?"Bine ai venit la TaskRealm!":"Welcome to TaskRealm!"
-q=M.dd(g,L.f2(q,A.d1(g,g,new P.y(f),g,g,g,g,g,g,g,g,30,g,g,g,g,!0,g,g,g,g,g,g,g),g,g),g,g,g,g,new V.aK(0,20,0,0),g,g)
-p=i.d==="RO"?"      Ce faci daca dintr-o data ti se sparge o teava, masina de spalat nu mai porneste sau aerul conditionat nu mai scoate aer rece?":"      What do you do if suddenly a pipe starts leaking, the washing machine doesn't start or the air conditioner is not cooling the air?"
-p=M.dd(g,L.f2(p,A.d1(g,g,new P.y(f),g,g,g,g,g,g,g,g,20,g,g,g,g,!0,g,g,g,g,g,g,g),g,g),g,new S.aR(100,700,0,1/0),g,g,new V.aK(0,10,0,0),g,g)
-n=i.d==="RO"?"      In loc sa pierzi timpul si nervii cautand pe cineva disponibil care sa te ajute, mai bine sa ai un loc unde iti poti face cunoscuta problema, iar cineva care se ocupa cu asta sa te contacteze.":"      Instead of wasting time and sanity to find someone that can help, better to have a place where you can post your problem and someone with the right skills and availability will get back to you."
-n=M.dd(g,L.f2(n,A.d1(g,g,new P.y(f),g,g,g,g,g,g,g,g,20,g,g,g,g,!0,g,g,g,g,g,g,g),g,g),g,new S.aR(100,700,0,1/0),g,g,new V.aK(0,10,0,0),g,g)
-m=i.d==="RO"?"      Noi venim cu solutia, o aplicatie care sa te ajute in situatii neprevazute.":"      We have the solution, an application that can help you with unexpected problems."
-m=M.dd(g,L.f2(m,A.d1(g,g,new P.y(f),g,g,g,g,g,g,g,g,20,g,g,g,g,!0,g,g,g,g,g,g,g),g,g),g,new S.aR(100,700,0,1/0),g,g,new V.aK(0,10,0,0),g,g)
-l=i.d==="RO"?"      Data viitoare cand nu ai cu cine sa lasi catelul sau ai nevoie de cineva sa te ajute cu mutatul sau orice altceva, intra in aplicatie iar daca ai vreo sugestie sau intrebari ne gasesti la contact@taskrealm.com":"      Next time when you don't have where to leave the dog over the weekend or you need help moving or anything really, try the application and if you have any questions or suggestion you can find us at contact@taskrealm.com"
-l=M.dd(g,L.f2(l,A.d1(g,g,new P.y(f),g,g,g,g,g,g,g,g,20,g,g,g,g,!0,g,g,g,g,g,g,g),g,g),g,new S.aR(100,700,0,1/0),g,g,new V.aK(0,10,0,0),g,g)
-k=T.a3S(H.a([M.dd(g,new D.ya(new F.ZA(),g,A.a2B(g,g,new V.es(new F.ZB(),t.qn),g,g,g,g,g,g,g,g,g,g,g,g,g,g,g),C.H,g,!1,M.dd(g,L.f2("Start",A.d1(g,g,new P.y(h),g,g,g,g,g,g,g,g,20,g,C.bD,g,g,!0,g,g,g,g,g,g,g),g,g),g,g,g,g,new V.aK(40,20,40,20),g,g),g),g,g,g,g,new V.aK(0,30,30,30),g,g)],d),C.di)
-j=i.d==="RO"?"(Aplicatiile de Android si IOS o sa fie adaugate in curand)":"(The Android and IOS application will come soon)"
-d=T.a2D(new T.xB(C.x,C.is,C.eH,C.e7,g,C.fi,g,H.a([s,r,o,q,p,n,m,l,k,M.dd(g,L.f2(j,A.d1(g,g,new P.y(f),g,g,g,g,g,g,g,g,15,g,g,g,g,!0,g,g,g,g,g,g,g),g,g),g,new S.aR(100,700,0,1/0),g,g,new V.aK(0,10,0,0),g,g)],d),g),g,g)
+q=M.dd(g,L.f2(q,A.d1(g,g,new P.y(f),g,g,g,g,g,g,g,g,20,g,g,g,g,!0,g,g,g,g,g,g,g),g,g),g,g,g,g,new V.aK(0,20,0,0),g,g)
+p=i.d==="RO"?"      Ce faci dac\u0103 dintr-o dat\u0103 \u021bi se sparge o \u021beav\u0103, ma\u0219in\u0103 de sp\u0103lat nu mai porne\u0219te sau aerul condi\u021bionat nu mai scoate aer rece?":"      What do you do if suddenly a pipe starts leaking, the washing machine doesn't start or the air conditioner is not cooling the air?"
+p=M.dd(g,L.f2(p,A.d1(g,g,new P.y(f),g,g,g,g,g,g,g,g,14,g,g,g,g,!0,g,g,g,g,g,g,g),g,g),g,new S.aR(100,700,0,1/0),g,g,new V.aK(0,10,0,0),g,g)
+n=i.d==="RO"?"      \xcen loc s\u0103 pierzi timpul \u0219i nervii c\u0103ut\xe2nd pe cineva disponibil care s\u0103 te ajute, mai bine s\u0103 ai un loc unde \xee\u021bi po\u021bi face cunoscut\u0103 problema, iar cineva care se ocup\u0103 cu asta s\u0103 te contacteze.":"      Instead of wasting time and sanity to find someone that can help, better to have a place where you can post your problem and someone with the right skills and availability will get back to you."
+n=M.dd(g,L.f2(n,A.d1(g,g,new P.y(f),g,g,g,g,g,g,g,g,14,g,g,g,g,!0,g,g,g,g,g,g,g),g,g),g,new S.aR(100,700,0,1/0),g,g,new V.aK(0,10,0,0),g,g)
+m=i.d==="RO"?"      Noi venim cu solu\u021bia, o aplica\u021bie care s\u0103 te ajute \xeen situa\u021bii neprev\u0103zute.":"      We have the solution, an application that can help you with unexpected problems."
+m=M.dd(g,L.f2(m,A.d1(g,g,new P.y(f),g,g,g,g,g,g,g,g,14,g,g,g,g,!0,g,g,g,g,g,g,g),g,g),g,new S.aR(100,700,0,1/0),g,g,new V.aK(0,10,0,0),g,g)
+l=i.d==="RO"?"      Dat\u0103 viitoare c\xe2nd nu ai cu cine s\u0103 la\u0219i c\u0103\u021belul sau ai nevoie de cineva s\u0103 te ajute cu mutatul sau orice altceva, intr\u0103 \xeen aplica\u021bie iar dac\u0103 ai vreo sugestie sau \xeentreb\u0103ri ne g\u0103se\u0219ti la contact@taskrealm.com":"      Next time when you don't have where to leave the dog over the weekend or you need help moving or anything really, try the application and if you have any questions or suggestion you can find us at contact@taskrealm.com"
+l=M.dd(g,L.f2(l,A.d1(g,g,new P.y(f),g,g,g,g,g,g,g,g,14,g,g,g,g,!0,g,g,g,g,g,g,g),g,g),g,new S.aR(100,700,0,1/0),g,g,new V.aK(0,10,0,0),g,g)
+k=T.a3S(H.a([M.dd(g,new D.ya(new F.ZA(),g,A.a2B(g,g,new V.es(new F.ZB(),t.qn),g,g,g,g,g,g,g,g,g,g,g,g,g,g,g),C.H,g,!1,M.dd(g,L.f2("Start",A.d1(g,g,new P.y(h),g,g,g,g,g,g,g,g,15,g,C.bD,g,g,!0,g,g,g,g,g,g,g),g,g),g,g,g,g,new V.aK(30,15,30,15),g,g),g),g,g,g,g,new V.aK(0,25,30,25),g,g)],d),C.di)
+j=i.d==="RO"?"(Aplica\u021biile de Android \u0219i IOS o s\u0103 fie ad\u0103ugate \xeen cur\xe2nd)":"(The Android and IOS application will come soon)"
+d=T.a2D(new T.xB(C.x,C.is,C.eH,C.e7,g,C.fi,g,H.a([s,r,o,q,p,n,m,l,k,M.dd(g,L.f2(j,A.d1(g,g,new P.y(f),g,g,g,g,g,g,g,g,14,g,g,g,g,!0,g,g,g,g,g,g,g),g,g),g,new S.aR(100,700,0,1/0),g,g,new V.aK(0,10,0,0),g,g)],d),g),g,g)
 return new M.rK(new E.Bv(!0,d,g),new P.y(h),e,g)}}
 F.Zw.prototype={
 $0:function(){this.a.d="EN"},

@@ -1,11 +1,11 @@
 {
-    "name": "TaskRealm",
-    "short_name": "TaskRealm",
+    "name": "tr_web",
+    "short_name": "tr_web",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "TaskRealm",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
