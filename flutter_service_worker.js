@@ -4,7 +4,7 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "favicon.png": "5dcef449791fa27946b3d35ad8803796",
-"main.dart.js": "962c8fb9ed11d02a24d3610bd4ffcdb6",
+"main.dart.js": "a69b16635ce887c03dfd68aa3e04ae06",
 "assets/AssetManifest.json": "eef237c087bf804c7f57db7ef962c515",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "assets/assets/logo_1024.png": "a4b2c407177527c78309defc845c8f46",
@@ -17,8 +17,8 @@ const RESOURCES = {
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "manifest.json": "ae1b73990691f82de17e25511785d7b4",
-"index.html": "10011fccc5a9b96627642d30ed77373b",
-"/": "10011fccc5a9b96627642d30ed77373b"
+"index.html": "050ce050e3c88a46aaf2bbcddccf8e3d",
+"/": "050ce050e3c88a46aaf2bbcddccf8e3d"
 };
 
 // The application shell files that are downloaded before a service worker can
