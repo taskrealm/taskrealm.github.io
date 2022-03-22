@@ -1,1 +1,6 @@
-{"app_name":"TaskRealm","version":"1.0.0","build_number":"1","package_name":"tr_web"}
+{
+  "app_name": "TaskRealm",
+  "version": "1.0.0",
+  "build_number": "1",
+  "package_name": "tr_web"
+}
