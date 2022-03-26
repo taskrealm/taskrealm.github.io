@@ -1,100 +1,517 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
 
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
+<html lang="en">
+  <head>
+    <title>TaskRealm</title>
+    <meta property="og:title" content="TaskRealm" />
 
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-  -->
-  <base href="/">
-
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A marketplace for solving problems.">
-
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="TaskRealm">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-  <title>TaskRealm</title>
-  <link rel="manifest" href="manifest.json">
-</head>
-<body>
-  <!-- This script installs service_worker.js to provide PWA functionality to
-       application. For more information, see:
-       https://developers.google.com/web/fundamentals/primers/service-workers -->
-  <script>
-    var serviceWorkerVersion = '3004143530';
-    var scriptLoaded = false;
-    function loadMainDartJs() {
-      if (scriptLoaded) {
-        return;
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <style>
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}
+    </style>
+    <style>
+      html {
+        font-family: Lexend;
+        font-size: 16px;
       }
-      scriptLoaded = true;
-      var scriptTag = document.createElement('script');
-      scriptTag.src = 'main.dart.js';
-      scriptTag.type = 'application/javascript';
-      document.body.append(scriptTag);
-    }
 
-    if ('serviceWorker' in navigator) {
-      // Service workers are supported. Use them.
-      window.addEventListener('load', function () {
-        // Wait for registration to finish before dropping the <script> tag.
-        // Otherwise, the browser will load the script multiple times,
-        // potentially different versions.
-        var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
-        navigator.serviceWorker.register(serviceWorkerUrl)
-          .then((reg) => {
-            function waitForActivation(serviceWorker) {
-              serviceWorker.addEventListener('statechange', () => {
-                if (serviceWorker.state == 'activated') {
-                  console.log('Installed new service worker.');
-                  loadMainDartJs();
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.1;
+        color: var(--dl-color-grays-dark100);
+        background-color: var(--dl-color-grays-white100);
+
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="public/playground_assets/favicon.ico"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    />
+    <style>
+      ::placeholder{
+      color: #63667066;
+      }
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="./home.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <main class="home-main">
+          <div class="home-hero section-container">
+            <div class="home-max-width max-content-container">
+              <div class="home-image-container">
+                <img
+                  alt="image"
+                  src="public/playground_assets/logo_br_500-700w.png"
+                  class="home-image"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="section-container">
+            <div class="home-max-width1 max-content-container">
+              <div class="home-content-container">
+                <h1 class="home-text">
+                  <span class="home-text01">
+                    TaskRealm este o platformă pentru servicii, locul unde
+                    oamenii pot rezolva tot ce au nevoie fără să piardă timp
+                    căutând persoana potrivită care să îi poată ajuta.
+                  </span>
+                </h1>
+                <div class="home-features-container">
+                  <div class="home-feature">
+                    <svg viewBox="0 0 877.7142857142857 1024" class="home-icon">
+                      <path
+                        d="M733.714 419.429c0-9.714-3.429-19.429-10.286-26.286l-52-51.429c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-233.143 232.571-129.143-129.143c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-52 51.429c-6.857 6.857-10.286 16.571-10.286 26.286s3.429 18.857 10.286 25.714l206.857 206.857c6.857 6.857 16.571 10.857 25.714 10.857 9.714 0 19.429-4 26.286-10.857l310.286-310.286c6.857-6.857 10.286-16 10.286-25.714zM877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                    <span class="home-text02">
+                      Mai ușor decât să cauți în diverse locuri
+                    </span>
+                  </div>
+                  <div class="home-feature1">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon02"
+                    >
+                      <path
+                        d="M733.714 419.429c0-9.714-3.429-19.429-10.286-26.286l-52-51.429c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-233.143 232.571-129.143-129.143c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-52 51.429c-6.857 6.857-10.286 16.571-10.286 26.286s3.429 18.857 10.286 25.714l206.857 206.857c6.857 6.857 16.571 10.857 25.714 10.857 9.714 0 19.429-4 26.286-10.857l310.286-310.286c6.857-6.857 10.286-16 10.286-25.714zM877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                    <span class="home-text03">
+                      <span class="home-text04">
+                        Nu te mai stresezi că nu ști la cine să apelezi
+                      </span>
+                    </span>
+                  </div>
+                  <div class="home-feature2">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon04"
+                    >
+                      <path
+                        d="M733.714 419.429c0-9.714-3.429-19.429-10.286-26.286l-52-51.429c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-233.143 232.571-129.143-129.143c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-52 51.429c-6.857 6.857-10.286 16.571-10.286 26.286s3.429 18.857 10.286 25.714l206.857 206.857c6.857 6.857 16.571 10.857 25.714 10.857 9.714 0 19.429-4 26.286-10.857l310.286-310.286c6.857-6.857 10.286-16 10.286-25.714zM877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                    <span class="home-text05">
+                      Rezolvi totul mult mai simplu și rapid
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-section-one section-container">
+            <div class="home-max-width2 max-content-container">
+              <h2 class="home-text06">
+                <span>Un singur loc dedicat sarcinilor/problemelor tale.</span>
+              </h2>
+              <div class="home-cards-container">
+                <div class="feature-card-card feature-card-root-class-name">
+                  <img
+                    alt="image"
+                    src="public/playground_assets/stars-200h.png"
+                    class="feature-card-image"
+                  />
+                  <h4 class="feature-card-text heading4">
+                    <span>Sarcini/ Probleme</span>
+                  </h4>
+                  <span class="feature-card-text1 content-Light">
+                    <span>
+                      De exemplu, dacă ți se sparge o țeavă, nu mai funcționează
+                      aerul condiționat, ai nevoie de servicii de menaj, etc.,
+                      nu mai consumi timp să cauți in diverse locuri pentru a
+                      găsi pe cineva cu abilitățile necesare și disponibil.
+                      Trebuie doar să faci o postare în aplicație cu sarcina/
+                      problema ta, iar cineva interesat să se ocupe de ea îți va
+                      trimite o ofertă.
+                    </span>
+                  </span>
+                  <span class="feature-card-text2"><span></span></span>
+                </div>
+                <div class="feature-card-card feature-card-root-class-name">
+                  <img
+                    alt="image"
+                    src="public/playground_assets/vector%203%20%5B2%5D-200h.png"
+                    class="feature-card-image"
+                  />
+                  <h4 class="feature-card-text heading4">
+                    <span>Lucrați</span>
+                  </h4>
+                  <span class="feature-card-text1 content-Light">
+                    <span>
+                      Cei care doresc să lucreze și au anumite abilități,
+                      aptitudini dar nu știu cum să își găsească clienți sau nu
+                      vor ca ei să piardă timp și resurse pentru a ajunge la
+                      persoanele care au ceva de rezolvat, pot folosi aplicația
+                      pentru a vedea sarcinile disponibile într-o anumită zonă
+                      și pentru a trimite ofertă celor care fac parte din
+                      categoria lor de interes.
+                    </span>
+                  </span>
+                  <span class="feature-card-text2"><span></span></span>
+                </div>
+                <div
+                  class="
+                    feature-card-multi-card feature-card-multi-root-class-name
+                  "
+                >
+                  <img
+                    alt="image"
+                    src="public/playground_assets/mail-200h.png"
+                    class="feature-card-multi-image"
+                  />
+                  <h4 class="feature-card-multi-text heading4">
+                    <span>Oferte</span>
+                  </h4>
+                  <span class="feature-card-multi-text1 content-Light">
+                    <span>
+                      Ca utilizator puteți vedea profilul și recenziile unui
+                      lucrător înainte să acceptați oferta.
+                    </span>
+                  </span>
+                  <span class="feature-card-multi-text2 content-Light">
+                    <span>
+                      Ca lucrător puteți să trimiteți oferta doar la sarcinile
+                      de care sunteți interesat.
+                    </span>
+                  </span>
+                  <span class="feature-card-multi-text3 content-Light">
+                    <span>
+                      După acceptarea unei oferte ambele persoane au acces la un
+                      chat privat unde se poate comunica.
+                    </span>
+                  </span>
+                  <span class="feature-card-multi-text4"><span></span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-container">
+            <div class="home-max-width3 max-content-container">
+              <div class="home-heading-container">
+                <h2 class="home-text08 heading2">
+                  <span>
+                    Dacă doriți să aveți la îndemână o soluție pentru orice,
+                    atunci ați ajuns în locul potrivit.
+                  </span>
+                </h2>
+                <span class="home-text10 content-Light">
+                  <span>
+                    Intră acum pe Magazin Play și descarcă aplicația sau poți
+                    încerca aplicația Web (nu include toate opțiunile aplicației
+                    mobile
+                  </span>
+                  <span>).</span>
+                  <br />
+                  <span>Aplicația de IOS o să fie adăugată în curând.</span>
+                </span>
+              </div>
+              <div class="home-get-the-app">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.taskrealm.app.test"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-link"
+                >
+                  <img
+                    alt="image"
+                    src="public/playground_assets/google-play-badge_ro-200h.png"
+                    class="home-image1"
+                  />
+                </a>
+              </div>
+              <a
+                href="http://app.taskrealm.com"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <label class="home-text15"><span>Aplicație Web</span></label>
+              </a>
+              <div class="home-cards-container1"></div>
+            </div>
+          </div>
+          <div class="home-section-six section-container">
+            <div class="home-max-width4 max-content-container">
+              <div class="home-content-container1">
+                <h1 class="home-text17">
+                  <span>
+                    Descarcă acum aplicația ca să nu fi luat prin surprindere
+                    mai târziu!
+                  </span>
+                  <br />
+                  <span class="home-text19">
+                    Crează-ți un cont și folosește aplicația gratuit.
+                  </span>
+                </h1>
+                <span class="home-text20">
+                  Aplicația este disponibilă online și în Google Play.
+                </span>
+                <div class="home-features-container1">
+                  <div class="home-feature3">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon06"
+                    >
+                      <path
+                        d="M733.714 419.429c0-9.714-3.429-19.429-10.286-26.286l-52-51.429c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-233.143 232.571-129.143-129.143c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-52 51.429c-6.857 6.857-10.286 16.571-10.286 26.286s3.429 18.857 10.286 25.714l206.857 206.857c6.857 6.857 16.571 10.857 25.714 10.857 9.714 0 19.429-4 26.286-10.857l310.286-310.286c6.857-6.857 10.286-16 10.286-25.714zM877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                    <span class="home-text21">
+                      Cel mai rapid mod de a găsi o soluție pentru probleme.
+                    </span>
+                  </div>
+                  <div class="home-feature4">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon08"
+                    >
+                      <path
+                        d="M733.714 419.429c0-9.714-3.429-19.429-10.286-26.286l-52-51.429c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-233.143 232.571-129.143-129.143c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-52 51.429c-6.857 6.857-10.286 16.571-10.286 26.286s3.429 18.857 10.286 25.714l206.857 206.857c6.857 6.857 16.571 10.857 25.714 10.857 9.714 0 19.429-4 26.286-10.857l310.286-310.286c6.857-6.857 10.286-16 10.286-25.714zM877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                    <span class="home-text22">
+                      <span class="home-text23">Acoperă o gamă</span>
+                      <span class="home-text24">largă de servicii.</span>
+                    </span>
+                  </div>
+                  <div class="home-feature5">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon10"
+                    >
+                      <path
+                        d="M733.714 419.429c0-9.714-3.429-19.429-10.286-26.286l-52-51.429c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-233.143 232.571-129.143-129.143c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-52 51.429c-6.857 6.857-10.286 16.571-10.286 26.286s3.429 18.857 10.286 25.714l206.857 206.857c6.857 6.857 16.571 10.857 25.714 10.857 9.714 0 19.429-4 26.286-10.857l310.286-310.286c6.857-6.857 10.286-16 10.286-25.714zM877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                    <span class="home-text25">
+                      Folosim tehnologia pentru a-ți simplifica viața.
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="home-image-container1">
+                <img
+                  alt="image"
+                  src="public/playground_assets/phone-1200w.png"
+                  class="home-image2"
+                />
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="footer-footer section-container">
+          <div class="footer-max-width max-content-container">
+            <div class="footer-container">
+              <img
+                alt="image"
+                src="public/playground_assets/logo_br_500-200h.png"
+                class="footer-image"
+              />
+              <span class="footer-text">
+                O singură aplicație unde poți rezolva toate problemele.
+              </span>
+              <div class="footer-social-media">
+                <span class="footer-text1">Ne gășiți si pe:</span>
+                <div class="footer-container1">
+                  <svg viewBox="0 0 1024 1024" class="footer-icon">
+                    <path
+                      d="M713.143 73.143c90.857 0 164.571 73.714 164.571 164.571v548.571c0 90.857-73.714 164.571-164.571 164.571h-107.429v-340h113.714l17.143-132.571h-130.857v-84.571c0-38.286 10.286-64 65.714-64l69.714-0.571v-118.286c-12-1.714-53.714-5.143-101.714-5.143-101.143 0-170.857 61.714-170.857 174.857v97.714h-114.286v132.571h114.286v340h-304c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571z"
+                    ></path></svg
+                  ><svg viewBox="0 0 1024 1024" class="footer-icon2">
+                    <path
+                      d="M512 92.2c136.8 0 153 0.6 206.8 3 50 2.2 77 10.6 95 17.6 23.8 9.2 41 20.4 58.8 38.2 18 18 29 35 38.4 58.8 7 18 15.4 45.2 17.6 95 2.4 54 3 70.2 3 206.8s-0.6 153-3 206.8c-2.2 50-10.6 77-17.6 95-9.2 23.8-20.4 41-38.2 58.8-18 18-35 29-58.8 38.4-18 7-45.2 15.4-95 17.6-54 2.4-70.2 3-206.8 3s-153-0.6-206.8-3c-50-2.2-77-10.6-95-17.6-23.8-9.2-41-20.4-58.8-38.2-18-18-29-35-38.4-58.8-7-18-15.4-45.2-17.6-95-2.4-54-3-70.2-3-206.8s0.6-153 3-206.8c2.2-50 10.6-77 17.6-95 9.2-23.8 20.4-41 38.2-58.8 18-18 35-29 58.8-38.4 18-7 45.2-15.4 95-17.6 53.8-2.4 70-3 206.8-3zM512 0c-139 0-156.4 0.6-211 3-54.4 2.4-91.8 11.2-124.2 23.8-33.8 13.2-62.4 30.6-90.8 59.2-28.6 28.4-46 57-59.2 90.6-12.6 32.6-21.4 69.8-23.8 124.2-2.4 54.8-3 72.2-3 211.2s0.6 156.4 3 211c2.4 54.4 11.2 91.8 23.8 124.2 13.2 33.8 30.6 62.4 59.2 90.8 28.4 28.4 57 46 90.6 59 32.6 12.6 69.8 21.4 124.2 23.8 54.6 2.4 72 3 211 3s156.4-0.6 211-3c54.4-2.4 91.8-11.2 124.2-23.8 33.6-13 62.2-30.6 90.6-59s46-57 59-90.6c12.6-32.6 21.4-69.8 23.8-124.2 2.4-54.6 3-72 3-211s-0.6-156.4-3-211c-2.4-54.4-11.2-91.8-23.8-124.2-12.6-34-30-62.6-58.6-91-28.4-28.4-57-46-90.6-59-32.6-12.6-69.8-21.4-124.2-23.8-54.8-2.6-72.2-3.2-211.2-3.2v0z"
+                    ></path>
+                    <path
+                      d="M512 249c-145.2 0-263 117.8-263 263s117.8 263 263 263 263-117.8 263-263c0-145.2-117.8-263-263-263zM512 682.6c-94.2 0-170.6-76.4-170.6-170.6s76.4-170.6 170.6-170.6c94.2 0 170.6 76.4 170.6 170.6s-76.4 170.6-170.6 170.6z"
+                    ></path>
+                    <path
+                      d="M846.8 238.6c0 33.91-27.49 61.4-61.4 61.4s-61.4-27.49-61.4-61.4c0-33.91 27.49-61.4 61.4-61.4s61.4 27.49 61.4 61.4z"
+                    ></path></svg
+                  ><svg viewBox="0 0 1024 1024" class="footer-icon6">
+                    <path
+                      d="M920.021 283.179c12.245 65.237 19.115 140.587 18.645 218.667 0.811 65.195-5.248 139.392-18.645 214.229-2.432 8.875-6.4 17.195-11.605 24.533-9.685 13.696-23.808 24.107-40.491 28.8-25.771 6.869-91.989 11.733-165.419 14.549-95.147 3.669-190.507 3.669-190.507 3.669s-95.36 0-190.507-3.627c-73.429-2.816-139.648-7.637-164.949-14.421-8.747-2.432-16.896-6.315-24.149-11.435-13.269-9.387-23.509-22.869-28.587-39.381-12.16-65.109-18.944-140.203-18.475-218.027-0.896-65.707 5.163-140.459 18.645-215.893 2.432-8.875 6.4-17.195 11.605-24.533 9.685-13.696 23.808-24.107 40.491-28.8 25.771-6.869 91.989-11.733 165.419-14.549 95.147-3.627 190.507-3.627 190.507-3.627s95.36 0 190.549 3.328c73.344 2.56 140.032 6.955 164.523 12.928 9.344 2.688 17.963 7.040 25.515 12.757 13.099 9.899 22.955 23.936 27.435 40.875zM1003.093 263.552c-9.259-36.949-30.635-67.84-59.008-89.301-15.915-12.032-33.963-21.077-53.291-26.667-38.315-9.387-115.029-13.781-185.259-16.213-96.725-3.371-193.536-3.371-193.536-3.371s-96.939 0-193.749 3.712c-70.059 2.688-147.2 7.467-184.192 17.365-37.291 10.539-67.456 32.853-88.064 61.867-11.52 16.256-20.011 34.603-25.045 54.101-0.256 1.024-0.469 2.091-0.64 3.029-14.635 80.981-21.291 161.835-20.309 233.856-0.512 82.091 6.869 163.456 20.352 234.752 0.256 1.323 0.555 2.645 0.896 3.755 10.453 36.693 32.853 66.859 61.909 87.381 15.232 10.752 32.299 18.859 50.389 23.936 37.504 10.027 114.603 14.805 184.661 17.493 96.853 3.712 193.792 3.712 193.792 3.712s96.939 0 193.749-3.712c70.059-2.688 147.157-7.467 184.192-17.365 37.248-10.539 67.456-32.853 88.021-61.867 11.52-16.256 20.053-34.603 25.045-54.059 0.256-1.067 0.512-2.133 0.64-3.029 14.507-80.384 21.163-160.64 20.309-232.107 0.512-82.133-6.869-163.541-20.352-234.837-0.171-0.853-0.341-1.707-0.512-2.432zM458.667 567.509v-132.352l116.352 66.176zM437.077 677.931l245.333-139.52c20.48-11.648 27.648-37.717 16-58.197-3.968-6.997-9.643-12.459-16-16l-245.333-139.52c-20.48-11.648-46.549-4.48-58.197 16-3.84 6.741-5.632 14.080-5.589 21.077v279.040c0 23.552 19.115 42.667 42.667 42.667 7.765 0 15.019-2.091 21.077-5.589z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="footer-links">
+              <div class="footer-container2">
+                <span class="footer-text2">Locații</span>
+                <a
+                  href="https://taskrealm.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="footer-link"
+                >
+                  Acasă
+                </a>
+                <a
+                  href="https://taskrealm.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="footer-link1 footer-link"
+                >
+                  Despre
+                </a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.taskrealm.app.test"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="footer-link2 footer-link"
+                >
+                  Aplicație Android
+                </a>
+                <a
+                  href="https://app.taskrealm.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="footer-link3 footer-link"
+                >
+                  Aplicație Web
+                </a>
+              </div>
+              <div class="footer-container3">
+                <span class="footer-text3">Resurse</span>
+                <a
+                  href="https://taskrealm.com/terms-conditions_ro.html"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="footer-link4 footer-link"
+                >
+                  Termeni și Condiții
+                </a>
+                <a
+                  href="https://taskrealm.com/privacy-policy_ro.html"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="footer-link5 footer-link"
+                >
+                  Politică de Confidențialitate
+                </a>
+                <a
+                  href="https://taskrealm.com/contact_ro.html"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="footer-link6 footer-link"
+                >
+                  Contact
+                </a>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <div class="copyright-copyright">
+          <div class="copyright-max-width max-content-container">
+            <span class="copyright-text">
+              <span class="copyright-text1">
+                © 2022 TaskRealm Toate drepturile rezervate.
+              </span>
+              <a
+                href="https://www.vercel.com"
+                target="_blank"
+                rel="noreferrer noopener"
+              ></a>
+              <a
+                href="https://www.unsplash.com"
+                target="_blank"
+                rel="noreferrer noopener"
+              ></a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+    <script>
+      window.onload = () => {
+        const runAllScripts = () => {
+          initializeAllSliders();
+        };
+
+        const listenForUrlChanges = () => {
+          let url = location.href;
+          document.body.addEventListener(
+            "click",
+            () => {
+              requestAnimationFrame(() => {
+                if (url !== location.href) {
+                  runAllScripts();
+                  url = location.href;
                 }
               });
+            },
+            true
+          );
+        };
+
+        const initializeAllSliders = () => {
+          const allSliders = document.querySelectorAll('[data-type="slider"]');
+          allSliders.forEach((carrousel) => {
+            initializeSlider(carrousel);
+          });
+        };
+
+        const initializeSlider = (carrousel) => {
+          let currentSlide = 0;
+
+          const slides = carrousel.querySelectorAll('[data-type="slide"]');
+          const nextSlideBtns = carrousel.querySelectorAll(
+            '[data-action="nextSlide"]'
+          );
+          const previousSlideBtns = carrousel.querySelectorAll(
+            '[data-action="previousSlide"]'
+          );
+
+          const changeSlide = (slideIndex, action) => {
+            currentSlide = slideIndex;
+
+            switch (action) {
+              case "next":
+                slideIndex === slides.length - 1
+                  ? (currentSlide = 0)
+                  : currentSlide++;
+                break;
+              case "previous":
+                slideIndex === 0
+                  ? (currentSlide = slides.length - 1)
+                  : currentSlide--;
             }
-            if (!reg.active && (reg.installing || reg.waiting)) {
-              // No active web worker and we have installed or are installing
-              // one for the first time. Simply wait for it to activate.
-              waitForActivation(reg.installing ?? reg.waiting);
-            } else if (!reg.active.scriptURL.endsWith(serviceWorkerVersion)) {
-              // When the app updates the serviceWorkerVersion changes, so we
-              // need to ask the service worker to update.
-              console.log('New service worker available.');
-              reg.update();
-              waitForActivation(reg.installing);
-            } else {
-              // Existing service worker is still good.
-              console.log('Loading app from service worker.');
-              loadMainDartJs();
-            }
+
+            carrousel.style.transform = `translateX(${-100 * currentSlide}%)`;
+          };
+
+          previousSlideBtns.forEach((btn) => {
+            btn.addEventListener("click", () =>
+              changeSlide(currentSlide, "previous")
+            );
           });
 
-        // If service worker doesn't succeed in a reasonable amount of time,
-        // fallback to plaint <script> tag.
-        setTimeout(() => {
-          if (!scriptLoaded) {
-            console.warn(
-              'Failed to load app from service worker. Falling back to plain <script> tag.',
+          nextSlideBtns.forEach((btn) => {
+            btn.addEventListener("click", () =>
+              changeSlide(currentSlide, "next")
             );
-            loadMainDartJs();
-          }
-        }, 4000);
-      });
-    } else {
-      // Service workers not supported. Just drop the <script> tag.
-      loadMainDartJs();
-    }
-  </script>
-</body>
+          });
+        };
+
+        runAllScripts();
+      };
+    </script>
+  </body>
 </html>
