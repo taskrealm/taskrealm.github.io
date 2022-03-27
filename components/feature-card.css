@@ -1,8 +1,9 @@
 .feature-card-card {
-  flex: 0 0 auto;
-  width: 25%;
+  flex: 1 1 auto;
+  width: 30%;
   display: flex;
-  max-width: 285px;
+  max-width: 300px;
+  min-width: 30px;
   align-items: center;
   padding-top: var(--dl-space-space-oneandhalfunits);
   padding-left: var(--dl-space-space-unit);
@@ -38,38 +39,63 @@
   text-decoration: underline;
 }
 .feature-card-root-class-name {
-  margin-left: var(--dl-space-space-threeunits);
-  margin-right: var(--dl-space-space-threeunits);
+  min-width: 30%;
+  margin-left: var(--dl-space-space-unit);
+  margin-right: var(--dl-space-space-unit);
 }
 .feature-card-root-class-name1 {
+  min-width: 30%;
   margin-top: 0px;
-  margin-left: var(--dl-space-space-threeunits);
-  margin-right: var(--dl-space-space-threeunits);
+  margin-left: var(--dl-space-space-unit);
+  margin-right: var(--dl-space-space-unit);
   margin-bottom: 0px;
+}
+@media(max-width: 991px) {
+  .feature-card-root-class-name {
+    flex: 1 1 auto;
+    max-width: 300px;
+    margin-left: var(--dl-space-space-unit);
+    margin-right: var(--dl-space-space-unit);
+  }
+  .feature-card-root-class-name1 {
+    flex: 1 1 auto;
+    max-width: 300px;
+    margin-left: var(--dl-space-space-unit);
+    margin-right: var(--dl-space-space-unit);
+  }
 }
 @media(max-width: 767px) {
   .feature-card-card {
     width: 50%;
   }
   .feature-card-root-class-name {
-    flex: 1;
-    max-width: 285px;
-    min-width: 30%;
+    flex: 1 1 auto;
+    max-width: 300px;
+    min-width: 90%;
     align-self: flex-start;
+    margin-left: var(--dl-space-space-twounits);
+    margin-right: var(--dl-space-space-twounits);
+  }
+  .feature-card-root-class-name1 {
+    min-width: 90%;
+    margin-left: var(--dl-space-space-twounits);
+    margin-right: var(--dl-space-space-twounits);
   }
 }
 @media(max-width: 479px) {
   .feature-card-card {
-    width: 100%;
+    width: 80%;
   }
   .feature-card-root-class-name {
-    min-width: 30%;
+    flex: 1;
+    max-width: 300px;
+    min-width: 90%;
+    align-self: flex-start;
   }
   .feature-card-root-class-name1 {
     flex: 1;
-    width: 0px;
-    max-width: 285px;
-    min-width: 30%;
+    max-width: 300px;
+    min-width: 90%;
     margin-bottom: 0px;
   }
 }
