@@ -51,6 +51,12 @@
   margin-bottom: 0px;
 }
 @media(max-width: 991px) {
+  .feature-card-text {
+    font-size: x-large;
+  }
+  .feature-card-text1 {
+    font-size: medium;
+  }
   .feature-card-root-class-name {
     flex: 1 1 auto;
     max-width: 300px;
@@ -67,6 +73,12 @@
 @media(max-width: 767px) {
   .feature-card-card {
     width: 50%;
+  }
+  .feature-card-text {
+    font-size: large;
+  }
+  .feature-card-text1 {
+    font-size: smaller;
   }
   .feature-card-root-class-name {
     flex: 1 1 auto;
@@ -160,13 +172,13 @@
     font-size: x-large;
   }
   .feature-card-multi-text1 {
-    font-size: large;
+    font-size: medium;
   }
   .feature-card-multi-text2 {
-    font-size: large;
+    font-size: medium;
   }
   .feature-card-multi-text3 {
-    font-size: large;
+    font-size: medium;
   }
   .feature-card-multi-root-class-name {
     flex: 1 1 auto;
@@ -183,13 +195,13 @@
     font-size: large;
   }
   .feature-card-multi-text1 {
-    font-size: medium;
+    font-size: smaller;
   }
   .feature-card-multi-text2 {
-    font-size: medium;
+    font-size: smaller;
   }
   .feature-card-multi-text3 {
-    font-size: medium;
+    font-size: smaller;
   }
   .feature-card-multi-root-class-name {
     flex: 1 1 auto;
@@ -208,13 +220,13 @@
     font-size: large;
   }
   .feature-card-multi-text1 {
-    font-size: medium;
+    font-size: smaller;
   }
   .feature-card-multi-text2 {
-    font-size: medium;
+    font-size: smaller;
   }
   .feature-card-multi-text3 {
-    font-size: medium;
+    font-size: smaller;
   }
   .feature-card-multi-root-class-name {
     flex: 1;
@@ -360,70 +372,70 @@
     width: 100%;
   }
   .footer-text {
-    font-size: large;
+    font-size: medium;
   }
   .footer-links {
     width: 100%;
     margin-bottom: var(--dl-space-space-threeunits);
   }
   .footer-text2 {
-    font-size: x-large;
+    font-size: large;
   }
   .footer-link {
-    font-size: large;
+    font-size: medium;
   }
   .footer-link1 {
-    font-size: large;
+    font-size: medium;
   }
   .footer-link2 {
-    font-size: large;
+    font-size: medium;
   }
   .footer-link3 {
-    font-size: large;
+    font-size: medium;
   }
   .footer-text3 {
-    font-size: x-large;
+    font-size: large;
   }
   .footer-link4 {
-    font-size: large;
+    font-size: medium;
   }
   .footer-link5 {
-    font-size: large;
+    font-size: medium;
   }
   .footer-link6 {
-    font-size: large;
+    font-size: medium;
   }
 }
 @media(max-width: 767px) {
   .footer-text {
-    font-size: medium;
+    font-size: smaller;
   }
   .footer-text2 {
-    font-size: large;
+    font-size: medium;
   }
   .footer-link {
-    font-size: medium;
+    font-size: smaller;
   }
   .footer-link1 {
-    font-size: medium;
+    font-size: smaller;
   }
   .footer-link2 {
-    font-size: medium;
+    font-size: smaller;
   }
   .footer-link3 {
-    font-size: medium;
+    font-size: smaller;
   }
   .footer-text3 {
-    font-size: large;
+    font-size: medium;
   }
   .footer-link4 {
-    font-size: medium;
+    font-size: smaller;
   }
   .footer-link5 {
-    font-size: medium;
+    font-size: smaller;
   }
   .footer-link6 {
-    font-size: medium;
+    font-size: smaller;
   }
 }
 @media(max-width: 479px) {
@@ -799,50 +811,50 @@
     padding-right: 0px;
   }
   .home-text {
-    font-size: xx-large;
+    font-size: x-large;
   }
   .home-text02 {
-    font-size: large;
+    font-size: medium;
   }
   .home-text03 {
-    font-size: large;
+    font-size: medium;
   }
   .home-text05 {
-    font-size: large;
+    font-size: medium;
   }
   .home-max-width2 {
     position: relative;
   }
   .home-text06 {
-    font-size: xx-large;
+    font-size: x-large;
   }
   .home-cards-container {
     position: relative;
     align-items: flex-start;
   }
   .home-text08 {
-    font-size: xx-large;
+    font-size: x-large;
   }
   .home-text10 {
-    font-size: large;
+    font-size: medium;
   }
   .home-max-width4 {
     flex-direction: column;
   }
   .home-text17 {
-    font-size: xx-large;
+    font-size: x-large;
   }
   .home-text20 {
-    font-size: large;
+    font-size: medium;
   }
   .home-text21 {
-    font-size: large;
+    font-size: medium;
   }
   .home-text22 {
-    font-size: large;
+    font-size: medium;
   }
   .home-text25 {
-    font-size: large;
+    font-size: medium;
   }
   .home-image2 {
     align-self: center;
@@ -851,44 +863,47 @@
 }
 @media(max-width: 767px) {
   .home-text {
-    font-size: x-large;
+    font-size: large;
   }
   .home-text02 {
-    font-size: medium;
+    font-size: smaller;
   }
   .home-text03 {
-    font-size: medium;
+    font-size: smaller;
   }
   .home-text05 {
-    font-size: medium;
+    font-size: smaller;
   }
   .home-text06 {
-    font-size: x-large;
+    font-size: large;
   }
   .home-cards-container {
     flex-wrap: wrap;
     justify-content: space-between;
   }
   .home-text08 {
-    font-size: x-large;
+    font-size: large;
   }
   .home-text10 {
-    font-size: medium;
+    font-size: smaller;
+  }
+  .home-image1 {
+    height: var(--dl-size-size-medium);
   }
   .home-text17 {
-    font-size: x-large;
+    font-size: large;
   }
   .home-text20 {
-    font-size: medium;
+    font-size: smaller;
   }
   .home-text21 {
-    font-size: medium;
+    font-size: smaller;
   }
   .home-text22 {
-    font-size: medium;
+    font-size: smaller;
   }
   .home-text25 {
-    font-size: medium;
+    font-size: smaller;
   }
 }
 @media(max-width: 479px) {
@@ -897,16 +912,16 @@
     height: 100px;
   }
   .home-text {
-    font-size: x-large;
+    font-size: large;
   }
   .home-text02 {
-    font-size: medium;
+    font-size: smaller;
   }
   .home-text03 {
-    font-size: medium;
+    font-size: smaller;
   }
   .home-text05 {
-    font-size: medium;
+    font-size: smaller;
   }
   .home-text06 {
     font-size: x-large;
@@ -915,24 +930,24 @@
     justify-content: center;
   }
   .home-text08 {
-    font-size: x-large;
+    font-size: large;
   }
   .home-text10 {
-    font-size: medium;
+    font-size: smaller;
   }
   .home-text17 {
-    font-size: x-large;
+    font-size: large;
   }
   .home-text20 {
-    font-size: medium;
+    font-size: smaller;
   }
   .home-text21 {
-    font-size: medium;
+    font-size: smaller;
   }
   .home-text22 {
-    font-size: medium;
+    font-size: smaller;
   }
   .home-text25 {
-    font-size: medium;
+    font-size: smaller;
   }
 }

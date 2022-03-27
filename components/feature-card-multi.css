@@ -58,13 +58,13 @@
     font-size: x-large;
   }
   .feature-card-multi-text1 {
-    font-size: large;
+    font-size: medium;
   }
   .feature-card-multi-text2 {
-    font-size: large;
+    font-size: medium;
   }
   .feature-card-multi-text3 {
-    font-size: large;
+    font-size: medium;
   }
   .feature-card-multi-root-class-name {
     flex: 1 1 auto;
@@ -81,13 +81,13 @@
     font-size: large;
   }
   .feature-card-multi-text1 {
-    font-size: medium;
+    font-size: smaller;
   }
   .feature-card-multi-text2 {
-    font-size: medium;
+    font-size: smaller;
   }
   .feature-card-multi-text3 {
-    font-size: medium;
+    font-size: smaller;
   }
   .feature-card-multi-root-class-name {
     flex: 1 1 auto;
@@ -106,13 +106,13 @@
     font-size: large;
   }
   .feature-card-multi-text1 {
-    font-size: medium;
+    font-size: smaller;
   }
   .feature-card-multi-text2 {
-    font-size: medium;
+    font-size: smaller;
   }
   .feature-card-multi-text3 {
-    font-size: medium;
+    font-size: smaller;
   }
   .feature-card-multi-root-class-name {
     flex: 1;

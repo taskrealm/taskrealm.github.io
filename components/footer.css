@@ -136,70 +136,70 @@
     width: 100%;
   }
   .footer-text {
-    font-size: large;
+    font-size: medium;
   }
   .footer-links {
     width: 100%;
     margin-bottom: var(--dl-space-space-threeunits);
   }
   .footer-text2 {
-    font-size: x-large;
+    font-size: large;
   }
   .footer-link {
-    font-size: large;
+    font-size: medium;
   }
   .footer-link1 {
-    font-size: large;
+    font-size: medium;
   }
   .footer-link2 {
-    font-size: large;
+    font-size: medium;
   }
   .footer-link3 {
-    font-size: large;
+    font-size: medium;
   }
   .footer-text3 {
-    font-size: x-large;
+    font-size: large;
   }
   .footer-link4 {
-    font-size: large;
+    font-size: medium;
   }
   .footer-link5 {
-    font-size: large;
+    font-size: medium;
   }
   .footer-link6 {
-    font-size: large;
+    font-size: medium;
   }
 }
 @media(max-width: 767px) {
   .footer-text {
-    font-size: medium;
+    font-size: smaller;
   }
   .footer-text2 {
-    font-size: large;
+    font-size: medium;
   }
   .footer-link {
-    font-size: medium;
+    font-size: smaller;
   }
   .footer-link1 {
-    font-size: medium;
+    font-size: smaller;
   }
   .footer-link2 {
-    font-size: medium;
+    font-size: smaller;
   }
   .footer-link3 {
-    font-size: medium;
+    font-size: smaller;
   }
   .footer-text3 {
-    font-size: large;
+    font-size: medium;
   }
   .footer-link4 {
-    font-size: medium;
+    font-size: smaller;
   }
   .footer-link5 {
-    font-size: medium;
+    font-size: smaller;
   }
   .footer-link6 {
-    font-size: medium;
+    font-size: smaller;
   }
 }
 @media(max-width: 479px) {

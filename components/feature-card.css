@@ -51,6 +51,12 @@
   margin-bottom: 0px;
 }
 @media(max-width: 991px) {
+  .feature-card-text {
+    font-size: x-large;
+  }
+  .feature-card-text1 {
+    font-size: medium;
+  }
   .feature-card-root-class-name {
     flex: 1 1 auto;
     max-width: 300px;
@@ -67,6 +73,12 @@
 @media(max-width: 767px) {
   .feature-card-card {
     width: 50%;
+  }
+  .feature-card-text {
+    font-size: large;
+  }
+  .feature-card-text1 {
+    font-size: smaller;
   }
   .feature-card-root-class-name {
     flex: 1 1 auto;
